@@ -21,3 +21,15 @@ do{
   i++;
 }
 while(i<20)
+
+
+runs once even if the condition gets wrong
+
+4. Break
+
+for( let i =10; i<20; i++){
+  console.log(i);
+  if(i === 30){
+    break;
+  }
+}
