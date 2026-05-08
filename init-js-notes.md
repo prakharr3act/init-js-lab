@@ -12,3 +12,12 @@ while(end){
 //code
 change
 }
+
+3. Do While
+
+let i =0
+do{
+  //code
+  i++;
+}
+while(i<20)
