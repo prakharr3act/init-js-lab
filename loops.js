@@ -37,17 +37,19 @@
 
 // Q1: Stops at multiple of 7
 
-for( let i=1 ; i < 101; i++){
-  console.log(`System Activate Will In ${i} Seconds`)
-  if( i % 7 === 0){
-     break;
-  }
-}
+// for( let i=1 ; i < 101; i++){
+//   console.log(`System Activate Will In ${i} Seconds`)
+//   if( i % 7 === 0){
+//      break;
+//   }
+// }
 
 
 // Q2: Skip multiples of 3
+
 for(let i = 0; i<100; i++){
   if( i % 3 ===0){
     continue;
   }
+  console.log(`The number that is not divisible by 3 is ${i}`);
 }
