@@ -34,3 +34,12 @@
 //   }
 // }
 
+
+// Q1: Stops at multiple of 7
+
+for( let i=0; i < 100; i++){
+  console.log(`System Activate Will In ${i} Seconds`)
+  if( i % 7 === 0){
+     break;
+  }
+}
