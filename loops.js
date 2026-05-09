@@ -57,8 +57,11 @@
 
 // Q3: Print first 5 odd numbers
 
+let count = 0;
 for( let i =0; i<101; i++){
   if(i % 2 === 1){
-      console.log(i)
+      console.log(i);
+      count++
   }
+  if(count === 5)break;
 }
