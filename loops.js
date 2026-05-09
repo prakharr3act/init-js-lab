@@ -47,9 +47,18 @@
 
 // Q2: Skip multiples of 3
 
-for(let i = 0; i<100; i++){
-  if( i % 3 ===0){
-    continue;
+// for(let i = 0; i<100; i++){
+//   if( i % 3 ===0){
+//     continue;
+//   }
+//   console.log(`The number that is not divisible by 3 is ${i}`);
+// }
+
+
+// Q3: Print first 5 odd numbers
+
+for( let i =0; i<101; i++){
+  if(i % 2 === 1){
+      console.log(i)
   }
-  console.log(`The number that is not divisible by 3 is ${i}`);
 }
