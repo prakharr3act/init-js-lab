@@ -3,3 +3,12 @@
 
 
 
+//High order Fnc
+
+function consoleText(){
+  return function(){
+    console.log("Hello World!!")
+  }
+}
+
+consoleText()();
