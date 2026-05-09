@@ -37,9 +37,12 @@
 
 // Q1: Stops at multiple of 7
 
-for( let i=1 ; i < 100; i++){
+for( let i=1 ; i < 101; i++){
   console.log(`System Activate Will In ${i} Seconds`)
   if( i % 7 === 0){
      break;
   }
 }
+
+
+// Q2: Skip multiples of 3
