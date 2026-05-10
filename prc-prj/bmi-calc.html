@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI Calculator</title>
+</head>
+<body>
+  <h2>BMI Calculator</h2>
+  <hr>
+  <label for="weight">Weight:
+    <input type="text" id="weight"  placeholder="in kilograms...">
+  </label>
+<br>
+<hr>
+    <label for="height">Height:
+    <input type="text" id="height" placeholder="in meters...">
+  </label>
+  <hr>
+  <br>
+  <br>
+  <h2 id="resulth2">Result:</h2>
+
+  <hr>
+  <h4 ><ul>
+    <li>If bmi is under 18 you are not nourished</li>
+    <li>if it is more than 25 you are fat</li>
+    <li>if it is between 18-25 you are considered health</li>
+  </ul></h4>
+
+  <button onclick="bmi()">Calculate BMI</button>
+
+</body>
+<script src="bmi-calc.js"></script>
+</html>
