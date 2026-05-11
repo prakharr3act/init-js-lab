@@ -67,3 +67,14 @@ console.log(resultEvy);
 let age = [10,21,10,30,6,40,80,90,50,4,10,20,30,5,50,60,]
 let [a,b,c,,e] = age;
 console.log(a,b,c,e);
+
+// spread
+
+//Note:
+// let arr = [1,201,15,215,213,81,51,41]
+// let arr2 = arr;
+// this will not copy but take the reference if any changes will occur in arr2 it also change arr
+
+let arr = [12,14,23,51,85,85,62,42,62];
+
+
