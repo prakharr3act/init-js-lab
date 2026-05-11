@@ -49,7 +49,21 @@ console.log(findFnc);
 // some
 
 let resultSome = marks.some(function(value){
-  return value > 70;
+  return value > 90;
 })
 
 console.log(resultSome);
+
+// every
+
+let resultEvy = marks.every(function(value){
+  return value > 33;
+})
+
+console.log(resultEvy);
+
+// destructuring
+
+let age = [10,21,10,30,6,40,80,90,50,4,10,20,30,5,50,60,]
+let [a,b,c,,e] = age;
+console.log(a,b,c,e);
