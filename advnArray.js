@@ -75,6 +75,8 @@ console.log(a,b,c,e);
 // let arr2 = arr;
 // this will not copy but take the reference if any changes will occur in arr2 it also change arr
 
-let arr = [12,14,23,51,85,85,62,42,62];
-
+let arr = [12,14,23,51,85,85,62,42,62,12];
+let arr2 = [...arr];
+console.log(arr);
+console.log(arr2)
 
