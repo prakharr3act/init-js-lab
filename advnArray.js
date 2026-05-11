@@ -33,12 +33,23 @@ let marksSum = marks.reduce(function(accumalator, value){
 console.log(marksSum)
 
 //find 
-
+// find the first element if detected
 let data = [
-  {id:1, key:1},
-  {id:2, key:2},
-  {id:3, key:1},
+  {id:985, key:'joesph'},
+  {id:731, key:2},
+  {id:103, key:'joesph'},
 ]
 let findFnc = data.find(function(val){
- return val.key === 98;
+ return val.key === 'joesph';
 })
+
+console.log(findFnc);
+
+
+// some
+
+let resultSome = marks.some(function(value){
+  return value > 70;
+})
+
+console.log(resultSome);
