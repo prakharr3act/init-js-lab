@@ -31,3 +31,14 @@ let marksSum = marks.reduce(function(accumalator, value){
 },0)
 
 console.log(marksSum)
+
+//find 
+
+let data = [
+  {id:1, key:1},
+  {id:2, key:2},
+  {id:3, key:1},
+]
+let findFnc = data.find(function(val){
+ return val.key === 98;
+})
