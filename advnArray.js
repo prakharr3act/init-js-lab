@@ -23,4 +23,11 @@ if (val > 33){
 console.log(filterArr);
 
 
-//reduce 
+//reduce  
+// makes a single array ??
+
+let marksSum = marks.reduce(function(accumalator, value){
+  return accumalator + value;
+},0)
+
+console.log(marksSum)
