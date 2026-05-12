@@ -5,4 +5,5 @@ let select = document.querySelector("select");
 let h3 =  document.querySelector("h3");
 select.addEventListener("change",function(event){
 h3.textContent = `${event.target.value} is selected`;
+// h3.style.textTransform = "capitalize"
 })
