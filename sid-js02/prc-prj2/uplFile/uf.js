@@ -7,6 +7,9 @@ p.addEventListener("click", function(){
 })
 
 inp.addEventListener("change",function(event){
- let fileName = event.target.files[0].name;
- p.innerText = `${fileName}`
+   const file = event.target.files[0];
+  if (file){
+ p.innerText = `${file.name}`
+  }
+
 })
