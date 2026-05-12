@@ -21,6 +21,24 @@ form{
   flex-direction: column;
   gap: 15px;
   width: 320px;
+  position: absolute;
+  top:20px;
+  left: 20px;
+}
+.container{
+  background: #bababa;
+  padding: 30px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 280px;
+  height: 350px;
+}
+
+img{
+  width: 100px;
+ margin: 10px auto;
 }
 
 input{
