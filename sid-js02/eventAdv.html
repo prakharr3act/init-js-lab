@@ -5,17 +5,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Window </title>
   <style>
-    body{
-      background-color: #222;
-      color: white;
-    }
+    
+body{
+  background:#111;
+  overflow:hidden;
+}
 
-    .ctn{
-      height: 100px;
-      width:100px;
-      position: absolute;
-      background-color:gold;
-    }
+.ctn{
+  position:absolute;
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  background:radial-gradient(circle at 30% 30%, #fff6b7, #f7b500 60%, #ff7b00);
+  animation: move 6s ease-in-out infinite;
+  transition: transform .25s ease, filter .25s ease;
+}
+
+.ctn::before{
+  content:"";
+  position:absolute;
+  inset:-12px;
+  border-radius:50%;
+  border:2px solid rgba(255,255,255,.15);
+  animation: spin 8s linear infinite;
+}
+
+.ctn::after{
+  content:"";
+  position:absolute;
+  width:25px;
+  height:25px;
+  background:rgba(255,255,255,.7);
+  border-radius:50%;
+  top:20px;
+  left:25px;
+  filter:blur(3px);
+}
+
+.ctn:hover{
+  transform:scale(1.08);
+  filter:brightness(1.1);
+}
+
+@keyframes move{
+  0%{
+    transform:translateY(0) translateX(0);
+  }
+  25%{
+    transform:translateY(-20px) translateX(10px);
+  }
+  50%{
+    transform:translateY(0) translateX(20px);
+  }
+  75%{
+    transform:translateY(20px) translateX(10px);
+  }
+  100%{
+    transform:translateY(0) translateX(0);
+  }
+}
+
+@keyframes spin{
+  from{
+    transform:rotate(0deg);
+  }
+  to{
+    transform:rotate(360deg);
+  }
+}
   </style>
 </head>
 <body>
