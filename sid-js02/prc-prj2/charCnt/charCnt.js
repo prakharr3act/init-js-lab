@@ -5,10 +5,12 @@ input.addEventListener("keydown",function(event){
   let count = 20;
   let result = count - input.value.length;
   span.innerText = `${result}`;
-  if(){
+   let specialChars = /[^a-zA-Z0-9 ]/;
 
+  if (specialChars.test(input.value)) {
+    span.style.color = "orange";
   }
-  esle if (result <0 ){
+  else if (result <0 ){
     span.style.color = "red";
   }
   else{
