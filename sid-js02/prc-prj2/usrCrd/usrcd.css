@@ -28,7 +28,7 @@ form{
 .container{
   background: #bababa;
   padding: 30px;
-  border-radius: 12px;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -38,7 +38,9 @@ form{
 
 img{
   width: 100px;
+  height: 100px;
  margin: 10px auto;
+ border-radius:100%;
 }
 
 input{
@@ -67,3 +69,15 @@ input::placeholder{
 #submitBtn:hover{
   opacity: 0.8;
 }
+p{
+  text-align: center;
+}
+
+#name{
+  font-size: 22px;
+}
+
+#email{
+  font-size: 20px;
+}
+
