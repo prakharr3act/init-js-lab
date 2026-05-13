@@ -1,5 +1,4 @@
 let form = document.querySelector('form');
-let inputs = document.querySelectorAll("input");
 let name = document.getElementById("name");
 let age = document.getElementById("age");
 let email = document.getElementById("email");

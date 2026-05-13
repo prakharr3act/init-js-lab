@@ -1,27 +1,98 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Add User</title>
+  <title>User Archive - Wikipedia Style</title>
   <link rel="stylesheet" href="usrcd.css">
 </head>
-<body>
-  <form>
-    <input type="text"  id="name" placeholder="name" >
-     <input type="text"  id="age" placeholder="age">
-      <input type="text"  id="email" placeholder="email">
-       <input type="text"  id="profilePic" placeholder="profile-pic">
-       <input type="submit" id="submitBtn">
-  </form>
 
-  <!-- <div class="container">
-     <img src="https://images.unsplash.com/photo-1778512828600-4a6540a1a115?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-    <p id="name">unknown</p>
-    <p id="age"> 21</p>
-    <p id="email">jein-init@reddit.com</p>
-  </div> -->
+<body>
+
+  <header>
+    <h1>User Archive</h1>
+    <p>Create and manage user cards</p>
+    <hr>
+  </header>
+
+  <aside class="sidebar">
+    <h2>Create User</h2>
+    <br>
+
+    <form>
+
+      <label>Name</label>
+      <input type="text" id="name" placeholder="Enter full name">
+
+      <label>Age</label>
+      <input type="text" id="age" placeholder="Enter age">
+
+      <label>Email</label>
+      <input type="text" id="email" placeholder="Enter email">
+
+      <label>Profile Picture</label>
+      <input type="text" id="profilePic" placeholder="Paste image URL">
+
+      <br>
+
+      <input type="submit" id="submitBtn" value="Create User">
+
+    </form>
+
+    <br>
+    <hr>
+    <br>
+
+    <p class="info">
+      This page stores user profile cards .
+    </p>
+  </aside>
+
+  <main class="cardsSection">
+
+    <!-- Example Card -->
+
+    <!--
+    <div class="container">
+
+      <h2>User Profile</h2>
+
+      <hr>
+
+      <img src="https://images.unsplash.com/photo-1778512828600-4a6540a1a115?q=80&w=687&auto=format&fit=crop">
+
+      <hr>
+
+      <p id="name">Unknown</p>
+
+      <br>
+
+      <p id="age">21 Years Old</p>
+
+      <br>
+
+      <p id="email">jein-init@reddit.com</p>
+
+      <hr>
+
+      <footer>
+        <small>Last Updated • 2026</small>
+      </footer>
+
+    </div>
+    -->
+
+  </main>
+
+  <footer class="mainFooter">
+
+    <hr>
+
+
+  </footer>
+
 </body>
+
 <script src="usrcd.js"></script>
+
 </html>
