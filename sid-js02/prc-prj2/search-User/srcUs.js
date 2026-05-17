@@ -1,294 +1,242 @@
 const users = [
   {
-    name: "Amisha Rathore",
-    pic: "https://i.pravatar.cc/400?img=1",
-    bio: "silent chaos in a loud world 🌑🖤"
+    name: "Aarav Sharma",
+    pic: "https://randomuser.me/api/portraits/men/1.jpg",
+    bio: "coding late nights 💻"
   },
   {
     name: "Kiara Mehta",
-    pic: "https://i.pravatar.cc/400?img=2",
-    bio: "coffee > everything ☕✨"
+    pic: "https://randomuser.me/api/portraits/women/2.jpg",
+    bio: "coffee and calm vibes ☕"
   },
   {
-    name: "Isha Oberoi",
-    pic: "https://i.pravatar.cc/400?img=3",
-    bio: "walking through dreams ☁️"
+    name: "Vivaan Kapoor",
+    pic: "https://randomuser.me/api/portraits/men/3.jpg",
+    bio: "dreaming beyond limits 🚀"
   },
   {
-    name: "Ojin Oklawa",
-    pic: "https://i.pravatar.cc/400?img=4",
-    bio: "too glam to give a damn 💅"
+    name: "Anaya Singh",
+    pic: "https://randomuser.me/api/portraits/women/4.jpg",
+    bio: "sunsets are therapy 🌅"
   },
   {
-    name: "Riya Sharma",
-    pic: "https://i.pravatar.cc/400?img=5",
-    bio: "moonlight & melodies 🌙🎧"
+    name: "Kabir Verma",
+    pic: "https://randomuser.me/api/portraits/men/5.jpg",
+    bio: "music over everything 🎧"
   },
   {
-    name: "Arjun Verma",
-    pic: "https://i.pravatar.cc/400?img=6",
-    bio: "building ideas into reality 🚀"
+    name: "Riya Patel",
+    pic: "https://randomuser.me/api/portraits/women/6.jpg",
+    bio: "smile more, stress less ✨"
   },
   {
-    name: "Kabir Khan",
-    pic: "https://i.pravatar.cc/400?img=7",
-    bio: "lost in pixels 🎮"
+    name: "Arjun Nair",
+    pic: "https://randomuser.me/api/portraits/men/7.jpg",
+    bio: "minimalist mindset 🖤"
   },
   {
-    name: "Sara Ali",
-    pic: "https://i.pravatar.cc/400?img=8",
-    bio: "pretty mind, savage soul 🖤"
+    name: "Sara Khan",
+    pic: "https://randomuser.me/api/portraits/women/8.jpg",
+    bio: "living little moments 🌸"
   },
   {
-    name: "Dev Malhotra",
-    pic: "https://i.pravatar.cc/400?img=9",
-    bio: "late night thinker 🌃"
-  },
-  {
-    name: "Anaya Kapoor",
-    pic: "https://i.pravatar.cc/400?img=10",
-    bio: "sunsets heal everything 🌅"
-  },
-  {
-    name: "Vihaan Roy",
-    pic: "https://i.pravatar.cc/400?img=11",
-    bio: "coding & chill 💻"
-  },
-  {
-    name: "Myra Singh",
-    pic: "https://i.pravatar.cc/400?img=12",
-    bio: "soft heart, sharp mind ✨"
-  },
-  {
-    name: "Aarav Joshi",
-    pic: "https://i.pravatar.cc/400?img=13",
-    bio: "dream big, stay humble 🌍"
-  },
-  {
-    name: "Tara Nair",
-    pic: "https://i.pravatar.cc/400?img=14",
-    bio: "chaotic but cute 😵‍💫"
-  },
-  {
-    name: "Reyansh Sethi",
-    pic: "https://i.pravatar.cc/400?img=15",
-    bio: "music keeps me alive 🎵"
-  },
-  {
-    name: "Aisha Khan",
-    pic: "https://i.pravatar.cc/400?img=16",
-    bio: "living in aesthetic mode 📸"
-  },
-  {
-    name: "Rohan Das",
-    pic: "https://i.pravatar.cc/400?img=17",
-    bio: "sleep? never heard of it 😴"
-  },
-  {
-    name: "Nitya Jain",
-    pic: "https://i.pravatar.cc/400?img=18",
-    bio: "books and rainy vibes 📚🌧️"
-  },
-  {
-    name: "Yash Patil",
-    pic: "https://i.pravatar.cc/400?img=19",
-    bio: "creating my own story ✍️"
+    name: "Dhruv Joshi",
+    pic: "https://randomuser.me/api/portraits/men/9.jpg",
+    bio: "focus mode always 🎯"
   },
   {
     name: "Meher Arora",
-    pic: "https://i.pravatar.cc/400?img=20",
-    bio: "kindness is power 🤍"
+    pic: "https://randomuser.me/api/portraits/women/10.jpg",
+    bio: "books and rain 📚🌧️"
+  },
+  {
+    name: "Yash Roy",
+    pic: "https://randomuser.me/api/portraits/men/11.jpg",
+    bio: "future entrepreneur 💸"
+  },
+  {
+    name: "Trisha Jain",
+    pic: "https://randomuser.me/api/portraits/women/12.jpg",
+    bio: "soft heart strong soul 🤍"
   },
   {
     name: "Aditya Rao",
-    pic: "https://i.pravatar.cc/400?img=21",
-    bio: "404 feelings not found 🤖"
+    pic: "https://randomuser.me/api/portraits/men/13.jpg",
+    bio: "offline feels peaceful 📵"
   },
   {
-    name: "Zoya Mirza",
-    pic: "https://i.pravatar.cc/400?img=22",
-    bio: "wild spirit 🌊"
-  },
-  {
-    name: "Dhruv Kapoor",
-    pic: "https://i.pravatar.cc/400?img=23",
-    bio: "future billionaire 💸"
-  },
-  {
-    name: "Pihu Sharma",
-    pic: "https://i.pravatar.cc/400?img=24",
-    bio: "tiny human, big dreams 🌸"
-  },
-  {
-    name: "Neil Fernandes",
-    pic: "https://i.pravatar.cc/400?img=25",
-    bio: "vibing through life 🎶"
-  },
-  {
-    name: "Ritika Sen",
-    pic: "https://i.pravatar.cc/400?img=26",
-    bio: "not everyone deserves access 🔒"
-  },
-  {
-    name: "Aryan Mehra",
-    pic: "https://i.pravatar.cc/400?img=27",
-    bio: "just another main character 🎬"
-  },
-  {
-    name: "Siya Gupta",
-    pic: "https://i.pravatar.cc/400?img=28",
-    bio: "healing and growing 🌱"
-  },
-  {
-    name: "Krish Batra",
-    pic: "https://i.pravatar.cc/400?img=29",
-    bio: "energy never lies ⚡"
-  },
-  {
-    name: "Aditi Roy",
-    pic: "https://i.pravatar.cc/400?img=30",
-    bio: "collecting memories 📷"
-  },
-  {
-    name: "Harsh Vardhan",
-    pic: "https://i.pravatar.cc/400?img=31",
-    bio: "silence speaks louder 🕶️"
-  },
-  {
-    name: "Tanvi Chawla",
-    pic: "https://i.pravatar.cc/400?img=32",
+    name: "Navya Gupta",
+    pic: "https://randomuser.me/api/portraits/women/14.jpg",
     bio: "golden hour addict 🌞"
   },
   {
-    name: "Kunal Yadav",
-    pic: "https://i.pravatar.cc/400?img=33",
-    bio: "grind now, shine later 🔥"
+    name: "Reyansh Malhotra",
+    pic: "https://randomuser.me/api/portraits/men/15.jpg",
+    bio: "gaming all day 🎮"
   },
   {
-    name: "Sneha Pillai",
-    pic: "https://i.pravatar.cc/400?img=34",
+    name: "Aisha Sheikh",
+    pic: "https://randomuser.me/api/portraits/women/16.jpg",
     bio: "good vibes only 🌈"
   },
   {
-    name: "Rudra Sen",
-    pic: "https://i.pravatar.cc/400?img=35",
-    bio: "gaming all night 🎮"
+    name: "Laksh Batra",
+    pic: "https://randomuser.me/api/portraits/men/17.jpg",
+    bio: "discipline > motivation 🔥"
   },
   {
-    name: "Ira Mallick",
-    pic: "https://i.pravatar.cc/400?img=36",
-    bio: "soft music & deep thoughts 🎼"
+    name: "Pihu Sharma",
+    pic: "https://randomuser.me/api/portraits/women/18.jpg",
+    bio: "creating memories 📸"
   },
   {
-    name: "Vedant Kulkarni",
-    pic: "https://i.pravatar.cc/400?img=37",
-    bio: "minimalist soul 🖤"
-  },
-  {
-    name: "Navya Reddy",
-    pic: "https://i.pravatar.cc/400?img=38",
-    bio: "sparkle differently ✨"
-  },
-  {
-    name: "Manav Khurana",
-    pic: "https://i.pravatar.cc/400?img=39",
-    bio: "work hard stay real 💯"
-  },
-  {
-    name: "Esha Kapoor",
-    pic: "https://i.pravatar.cc/400?img=40",
-    bio: "chaos with confidence 👑"
-  },
-  {
-    name: "Vivaan Arora",
-    pic: "https://i.pravatar.cc/400?img=41",
-    bio: "offline is peace 📵"
-  },
-  {
-    name: "Sana Sheikh",
-    pic: "https://i.pravatar.cc/400?img=42",
-    bio: "romanticizing life 🌷"
-  },
-  {
-    name: "Laksh Sharma",
-    pic: "https://i.pravatar.cc/400?img=43",
-    bio: "focused on bigger things 🎯"
+    name: "Rohan Das",
+    pic: "https://randomuser.me/api/portraits/men/19.jpg",
+    bio: "late night thinker 🌃"
   },
   {
     name: "Anika Bose",
-    pic: "https://i.pravatar.cc/400?img=44",
-    bio: "living for little moments 🌼"
+    pic: "https://randomuser.me/api/portraits/women/20.jpg",
+    bio: "kindness matters 🌼"
   },
   {
-    name: "Parth Jain",
-    pic: "https://i.pravatar.cc/400?img=45",
-    bio: "mindset is everything 🧠"
+    name: "Vihaan Sethi",
+    pic: "https://randomuser.me/api/portraits/men/21.jpg",
+    bio: "building my future ⚡"
   },
   {
-    name: "Trisha Anand",
-    pic: "https://i.pravatar.cc/400?img=46",
-    bio: "floating through feelings ☁️"
+    name: "Sneha Pillai",
+    pic: "https://randomuser.me/api/portraits/women/22.jpg",
+    bio: "chaotic but cute 😵‍💫"
   },
   {
-    name: "Abeer Khan",
-    pic: "https://i.pravatar.cc/400?img=47",
-    bio: "dark mode personality 🌑"
+    name: "Krish Yadav",
+    pic: "https://randomuser.me/api/portraits/men/23.jpg",
+    bio: "hard work wins 💯"
+  },
+  {
+    name: "Ritika Sen",
+    pic: "https://randomuser.me/api/portraits/women/24.jpg",
+    bio: "romanticizing life 🌷"
+  },
+  {
+    name: "Neil Fernandes",
+    pic: "https://randomuser.me/api/portraits/men/25.jpg",
+    bio: "keep moving forward 🚶"
+  },
+  {
+    name: "Tara Kapoor",
+    pic: "https://randomuser.me/api/portraits/women/26.jpg",
+    bio: "peace in simplicity ⚪"
+  },
+  {
+    name: "Aryan Mehra",
+    pic: "https://randomuser.me/api/portraits/men/27.jpg",
+    bio: "main character energy 🎬"
+  },
+  {
+    name: "Siya Chawla",
+    pic: "https://randomuser.me/api/portraits/women/28.jpg",
+    bio: "dreaming in colors 🎨"
+  },
+  {
+    name: "Vedant Kulkarni",
+    pic: "https://randomuser.me/api/portraits/men/29.jpg",
+    bio: "silence speaks louder 🕶️"
+  },
+  {
+    name: "Sana Mirza",
+    pic: "https://randomuser.me/api/portraits/women/30.jpg",
+    bio: "moonlight lover 🌙"
+  },
+  {
+    name: "Manav Khurana",
+    pic: "https://randomuser.me/api/portraits/men/31.jpg",
+    bio: "grind now shine later ✨"
   },
   {
     name: "Rhea Thomas",
-    pic: "https://i.pravatar.cc/400?img=48",
-    bio: "happiness looks good on me 😊"
+    pic: "https://randomuser.me/api/portraits/women/32.jpg",
+    bio: "smiles heal everything 😊"
   },
   {
-    name: "Ivaan Gill",
-    pic: "https://i.pravatar.cc/400?img=49",
-    bio: "keep it simple ⚪"
+    name: "Kunal Patil",
+    pic: "https://randomuser.me/api/portraits/men/33.jpg",
+    bio: "energy never lies ⚡"
+  },
+  {
+    name: "Ira Mallick",
+    pic: "https://randomuser.me/api/portraits/women/34.jpg",
+    bio: "lost in melodies 🎼"
+  },
+  {
+    name: "Parth Jain",
+    pic: "https://randomuser.me/api/portraits/men/35.jpg",
+    bio: "mindset is key 🧠"
+  },
+  {
+    name: "Myra Singh",
+    pic: "https://randomuser.me/api/portraits/women/36.jpg",
+    bio: "sparkle differently ✨"
+  },
+  {
+    name: "Abeer Khan",
+    pic: "https://randomuser.me/api/portraits/men/37.jpg",
+    bio: "dark mode personality 🌑"
+  },
+  {
+    name: "Zoya Ali",
+    pic: "https://randomuser.me/api/portraits/women/38.jpg",
+    bio: "wild and free 🌊"
+  },
+  {
+    name: "Harsh Verma",
+    pic: "https://randomuser.me/api/portraits/men/39.jpg",
+    bio: "stay real always 💯"
   },
   {
     name: "Samaira Joshi",
-    pic: "https://i.pravatar.cc/400?img=50",
-    bio: "creating art from chaos 🎨"
+    pic: "https://randomuser.me/api/portraits/women/40.jpg",
+    bio: "art from chaos 🎨"
   }
 ];
 
-
 function showUsers(arr) {
   arr.forEach(function (user) {
-    // Create outer card div
-    const card = document.createElement("div");
+        const card = document.createElement("div");
     card.classList.add("card");
 
-    // Create image
+    
     const img = document.createElement("img");
     img.src = user.pic;
     img.classList.add("bg-img");
 
-    // Create blurred-layer div
+    
     const blurredLayer = document.createElement("div");
     blurredLayer.style.backgroundImage = `url(${user.pic})`;
     blurredLayer.classList.add("blurred-layer");
 
-    // Create content div
+    
     const content = document.createElement("div");
     content.classList.add("content");
 
-    // Create h3 and paragraph
+    
     const heading = document.createElement("h3");
     heading.textContent = user.name;
 
     const para = document.createElement("p");
     para.textContent = user.bio;
 
-    // Append heading and paragraph to content
+    
     content.appendChild(heading);
     content.appendChild(para);
 
-    // Append all to card
+   
     card.appendChild(img);
     card.appendChild(blurredLayer);
     card.appendChild(content);
 
-    // Finally, append card to the body or any container
+    
     document.querySelector(".cards").appendChild(card);
   });
 }
@@ -303,4 +251,12 @@ inp.addEventListener("input", function () {
 
   document.querySelector(".cards").innerHTML = "";
   showUsers(newUsers);
+
+   if(!user.name.startsWith(inp.value)){
+ document.querySelector("h1").style.display = "block";
+ }
+
+
+ 
 });
+

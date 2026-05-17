@@ -1,5 +1,5 @@
 body {
-  background: #000000;
+  background: #0a0a0a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,12 +7,16 @@ body {
   font-family: "Helvetica Neue", sans-serif;
 }
 
+h1{
+  color: #555;
+  display: none;
+}
 .card {
   position: relative;
   width: 200px;
   height: 300px;
   overflow: hidden;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
 }
 
