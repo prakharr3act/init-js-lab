@@ -7,6 +7,15 @@
   font-family:"Inter",sans-serif;
 }
 
+html{
+  scroll-behavior:smooth;
+}
+
+img{
+  max-width:100%;
+  display:block;
+}
+
 .body-dark{
   --bg:#050505;
   --card:#111;
@@ -31,30 +40,36 @@ body{
   background:var(--bg);
   color:var(--text);
   transition:.4s;
+  overflow-x:hidden;
 }
 
 nav{
   width:100%;
-  padding:25px 8%;
+  padding:22px 8%;
   display:flex;
   justify-content:space-between;
   align-items:center;
   border-bottom:1px solid var(--border);
   position:sticky;
   top:0;
-  background:var(--bg);
-  backdrop-filter:blur(10px);
-  z-index:100;
+  background:rgba(0,0,0,.7);
+  backdrop-filter:blur(15px);
+  z-index:999;
+}
+
+.body-light nav{
+  background:rgba(255,255,255,.7);
 }
 
 .logo{
-  font-size:1.7rem;
+  font-size:clamp(1.3rem,3vw,1.7rem);
   font-weight:700;
   letter-spacing:4px;
 }
 
 nav ul{
   display:flex;
+  align-items:center;
   gap:40px;
   list-style:none;
 }
@@ -63,6 +78,7 @@ nav a{
   text-decoration:none;
   color:var(--text);
   transition:.3s;
+  font-size:.95rem;
 }
 
 nav a:hover{
@@ -77,6 +93,11 @@ nav a:hover{
   cursor:pointer;
   font-weight:600;
   border-radius:50px;
+  transition:.3s;
+}
+
+.theme-btn:hover{
+  transform:scale(1.05);
 }
 
 .hero{
@@ -88,16 +109,22 @@ nav a:hover{
   gap:70px;
 }
 
+.hero-text{
+  width:100%;
+}
+
 .hero-text span{
   color:#888;
   letter-spacing:2px;
   text-transform:uppercase;
+  font-size:.9rem;
 }
 
 .hero-text h1{
-  font-size:5rem;
+  font-size:clamp(3rem,8vw,5rem);
   line-height:1;
   margin:20px 0;
+  max-width:700px;
 }
 
 .hero-text p{
@@ -105,11 +132,13 @@ nav a:hover{
   line-height:1.9;
   max-width:550px;
   margin-bottom:35px;
+  font-size:clamp(.95rem,2vw,1rem);
 }
 
 .hero-buttons{
   display:flex;
   gap:20px;
+  flex-wrap:wrap;
 }
 
 .hero-buttons button{
@@ -120,6 +149,11 @@ nav a:hover{
   color:var(--btnText);
   cursor:pointer;
   font-weight:600;
+  transition:.3s;
+}
+
+.hero-buttons button:hover{
+  transform:translateY(-3px);
 }
 
 .hero-buttons .outline{
@@ -129,6 +163,7 @@ nav a:hover{
 }
 
 .hero-image{
+  width:100%;
   height:750px;
   overflow:hidden;
   border-radius:30px;
@@ -138,9 +173,15 @@ nav a:hover{
   width:100%;
   height:100%;
   object-fit:cover;
+  transition:.5s;
+}
+
+.hero-image:hover img{
+  transform:scale(1.05);
 }
 
 .cards{
+  width:100%;
   padding:100px 8%;
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
@@ -150,7 +191,7 @@ nav a:hover{
 .card{
   background:var(--card);
   border:1px solid var(--border);
-  border-radius:10px;
+  border-radius:18px;
   overflow:hidden;
   transition:.4s;
 }
@@ -185,9 +226,11 @@ nav a:hover{
 }
 
 .banner h2{
-  font-size:3rem;
+  font-size:clamp(1.8rem,5vw,3rem);
   line-height:1.5;
   font-weight:300;
+  max-width:1000px;
+  margin:auto;
 }
 
 footer{
@@ -195,13 +238,55 @@ footer{
   padding:35px;
   text-align:center;
   color:var(--para);
+  font-size:.95rem;
 }
 
-@media(max-width:950px){
+@media(max-width:1200px){
+
+  .hero{
+    gap:50px;
+  }
+
+  .hero-image{
+    height:650px;
+  }
+
+}
+
+@media(max-width:992px){
+
+  nav{
+    padding:20px 6%;
+  }
+
+  .hero{
+    grid-template-columns:1fr;
+    padding:70px 6%;
+  }
+
+  .hero-text{
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .hero-image{
+    height:550px;
+  }
+
+  .cards{
+    padding:80px 6%;
+  }
+
+}
+
+@media(max-width:768px){
 
   nav{
     flex-direction:column;
     gap:20px;
+    padding:18px 5%;
   }
 
   nav ul{
@@ -211,19 +296,117 @@ footer{
   }
 
   .hero{
-    grid-template-columns:1fr;
-  }
-
-  .hero-text h1{
-    font-size:3.7rem;
+    min-height:auto;
+    padding:60px 5%;
+    gap:40px;
   }
 
   .hero-image{
-    height:500px;
+    height:450px;
+    border-radius:20px;
   }
 
-  .banner h2{
-    font-size:2rem;
+  .hero-buttons{
+    justify-content:center;
+  }
+
+  .cards{
+    grid-template-columns:1fr;
+    padding:70px 5%;
+  }
+
+  .card img{
+    height:300px;
+  }
+
+  .banner{
+    padding:100px 6%;
+  }
+
+}
+
+@media(max-width:540px){
+
+  nav ul{
+    width:100%;
+    gap:14px;
+  }
+
+  nav a{
+    font-size:.9rem;
+  }
+
+  .theme-btn{
+    width:100%;
+  }
+
+  .hero{
+    padding-top:40px;
+  }
+
+  .hero-text h1{
+    line-height:1.1;
+  }
+
+  .hero-text p{
+    line-height:1.7;
+  }
+
+  .hero-buttons{
+    width:100%;
+    flex-direction:column;
+  }
+
+  .hero-buttons button{
+    width:100%;
+  }
+
+  .hero-image{
+    height:340px;
+  }
+
+  .card img{
+    height:240px;
+  }
+
+  .content{
+    padding:22px;
+  }
+
+  .banner{
+    padding:80px 5%;
+  }
+
+  footer{
+    padding:25px 15px;
+  }
+
+}
+
+@media(max-width:380px){
+
+  .logo{
+    letter-spacing:2px;
+  }
+
+  nav ul{
+    flex-direction:column;
+  }
+
+  .hero-image{
+    height:280px;
+  }
+
+  .card img{
+    height:200px;
+  }
+
+  .content h2{
+    font-size:1.2rem;
+  }
+
+  .content p{
+    font-size:.92rem;
   }
 
 }
