@@ -10,7 +10,8 @@ let intvl = setInterval(function(){
    document.querySelector(".percent").textContent = "100%";
    document.querySelector(".bar").style.width = `100%`;
    clearInterval(intvl);
-      document.querySelector(".card").style.display = "none";
+      // document.querySelector(".card").style.display = "none";
+      document.querySelector(".title").textContent = "Loaded"
   }
 },30)
 
